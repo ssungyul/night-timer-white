@@ -15,17 +15,12 @@ body {
   align-items: center;
   font-family: 'Baloo 2', cursive;
   overflow: hidden;
-}
 
-/* 🎥 배경 영상 */
-.bg-video {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
+  /* 🌌 PNG 배경 */
+  background-image: url("night.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* 🤍 흰색 반투명 카드 */
@@ -33,11 +28,11 @@ body {
   width: 220px;
   padding: 20px;
   border-radius: 22px;
-  background: rgba(255, 255, 255, 0.35);  /* 흰색 반투명 */
+  background: rgba(255, 255, 255, 0.35);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   text-align: center;
-  color: #222; /* 글자색 어둡게 변경 */
+  color: #222;
   box-shadow: 0 8px 25px rgba(0,0,0,0.25);
 }
 
@@ -125,11 +120,6 @@ body {
 </head>
 
 <body>
-
-<!-- 🎥 night.mp4 배경 -->
-<video autoplay muted loop playsinline class="bg-video">
-  <source src="night.mp4" type="video/mp4">
-</video>
 
 <div class="container">
 
